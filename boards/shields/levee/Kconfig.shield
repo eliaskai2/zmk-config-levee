@@ -1,0 +1,5 @@
+config SHIELD_LEVEE_LEFT
+    def_bool $(shields_list_contains,levee_left)
+
+config SHIELD_LEVEE_RIGHT
+    def_bool $(shields_list_contains,levee_right)
