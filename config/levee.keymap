@@ -4,6 +4,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #define default_layer 0
+#define lower_layer 1
 
 / {
     // Define a default keymap here.
