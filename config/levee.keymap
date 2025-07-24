@@ -24,7 +24,7 @@
         };
         lower_layer {
             bindings = <
-                &kp ESC    &trans      &trans      &trans     &kp K_BRI_DN  &kp K_BRI_UP         &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &bt BT_CLR  &trans
+                &kp ESC    &trans      &trans      &trans     &kp C_BRI_UP  &kp C_BRI_UP         &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &bt BT_CLR  &trans
                 &trans     &trans      &trans      &trans     &trans        &trans               &trans      &trans        &trans        &trans  &trans      &kp K_PWR
                 &trans     &trans      &trans      &kp MINUS  &kp EQUAL     &trans               &trans      &kp LBKT      &kp RBKT      &trans  &kp SEMI    &trans
                 &trans     &trans      &trans      &trans     &trans        &trans               &trans      &trans        &trans        &trans  &trans      &trans
