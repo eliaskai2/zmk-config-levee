@@ -15,15 +15,29 @@
 
         default_layer {
             bindings = <
-                &kp GRAVE  &kp N1    &kp N2     &kp N3     &kp N4    &kp N5           &kp N6     &kp N7  &kp N8     &kp N9    &kp N0    &kp BSPC
-                &kp TAB    &kp Q     &kp W      &kp E      &kp R     &kp T            &kp Y      &kp U   &kp I      &kp O     &kp P     &kp BSLH
-                &kp CAPS   &kp A     &kp S      &kp D      &kp F     &kp G            &kp H      &kp J   &kp K      &kp L     &kp APOS  &kp RET
-                &kp LSHFT  &kp Z     &kp X      &kp C      &kp V     &kp B            &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                &kp LEFT   &kp DOWN  &kp GLOBE  &kp LCTRL  &kp LCMD  &kp SPACE        &kp SPACE  &mo 1  &kp RCMD   &kp RALT  &kp UP    &kp RIGHT
+
+            //  |   `   |   1   |   2   |   3   |   4   |   5   |         |   6   |   7   |   8   |   9   |   0   | BKSPC |
+            //  |  TAB  |   Q   |   W   |   E   |   R   |   T   |         |   Y   |   U   |   I   |   O   |   P   | BKSLH |
+            //  | CAPSL |   A   |   S   |   D   |   F   |   G   |         |   H   |   J   |   K   |   L   |   '   |  RET  |
+            //  | LSHFT |  LOW  |   Z   |   X   |   C   |   V   |         |   B   |   N   |   M   | COMMA |  DOT  | RSHFT |
+            //  | LTARW | DNARW | GLOBE | LCTRL | LCOMD | SPACE |         | SPACE | RCOMD | RTALT | FLSLH | UPARW | RTARW |
+
+                &kp GRAVE  &kp N1    &kp N2     &kp N3     &kp N4    &kp N5           &kp N6     &kp N7  &kp N8    &kp N9     &kp N0    &kp BSPC
+                &kp TAB    &kp Q     &kp W      &kp E      &kp R     &kp T            &kp Y      &kp U   &kp I     &kp O      &kp P     &kp BSLH
+                &kp CAPS   &kp A     &kp S      &kp D      &kp F     &kp G            &kp H      &kp J   &kp K     &kp L      &kp APOS  &kp RET
+                &kp LSHFT  &mo 1     &kp Z      &kp X      &kp C     &kp V            &kp B      &kp N   &kp M     &kp COMMA  &kp DOT   &kp RSHFT
+                &kp LEFT   &kp DOWN  &kp GLOBE  &kp LCTRL  &kp LCMD  &kp SPACE        &kp SPACE  &RCMD   &kp RALT  &kp FLSH   &kp UP    &kp RIGHT
             >;
         };
         lower_layer {
             bindings = <
+
+            //  |  ESC  |       |       |       | BRTDN | BRTUP |         |  MUT  | VOLDN | VOLUP |       | BTCLR |       |
+            //  |       |       |       |       |       |       |         |       |       |       |       |       |       |
+            //  |       |       |       |   -   |   =   |       |         |       |   [   |   ]   |       |   ;   |       |
+            //  |       |       |  BT3  |  BT4  |       |       |         |       |       |       |       |       |       |
+            //  |       |       |  BT1  |  BT2  |       |       |         |       |       |       |       |       |  PWR  |
+            
                 &kp ESC  &trans  &trans        &trans        &kp F14    &kp F15         &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &bt BT_CLR  &trans
                 &trans   &trans  &trans        &trans        &trans     &trans          &trans      &trans        &trans        &trans  &trans      &trans
                 &trans   &trans  &trans        &kp MINUS     &kp EQUAL  &trans          &trans      &kp LBKT      &kp RBKT      &trans  &kp SEMI    &trans
